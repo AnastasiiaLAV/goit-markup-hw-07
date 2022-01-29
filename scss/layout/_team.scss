@@ -45,8 +45,10 @@
   display: flex;
   justify-content: center;
 }
-.team-social-item + .team-social-item {
-  margin-left: 10px;
+.team-social-item {
+  & + & {
+    margin-left: 10px;
+  }
 }
 .team-social-link {
   width: 44px;
@@ -65,9 +67,10 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--header-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--header-color);
+  }
 }

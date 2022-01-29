@@ -46,10 +46,11 @@
   align-items: center;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close:focus,
-.modal-close:hover {
-  fill: var(--accent-color);
+  
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 .modal-icon-close {
   width: 11px;
@@ -96,15 +97,18 @@
   padding-left: 42px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-imput::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.form-imput:focus {
-  border-color: var(--accent-color);
-}
-.form-imput:focus + .imput-icon {
-  fill: var(--accent-color);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:focus + .imput-icon {
+    fill: var(--accent-color);
+  }
 }
 .imput-icon {
   position: absolute;
@@ -133,17 +137,17 @@
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 30px;
-}
 
-.text-checkbox span {
-  width: 16px;
-  height: 15px;
+  & span {
+    width: 16px;
+    height: 15px;
 
-  border: 2px solid var(--title-color);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    border: 2px solid var(--title-color);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .icon-check {
   width: 16px;
@@ -174,9 +178,10 @@
   margin: 0 auto;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn:hover,
-.modal-btn:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }

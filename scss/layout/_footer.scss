@@ -20,23 +20,22 @@
   font-style: normal;
 }
 .footer-link-map {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--header-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link-mail,
 .footer-link-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-mail,
+.footer-link-tel,
+.footer-link-map {
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link-map:hover,
-.footer-link-mail:hover,
-.footer-link-tel:hover,
-.footer-link-map:focus,
-.footer-link-mail:focus,
-.footer-link-tel:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

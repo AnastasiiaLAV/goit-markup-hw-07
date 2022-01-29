@@ -53,24 +53,26 @@
   padding: 32px 0;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 .line-current {
   position: relative;
   color: var(--accent-color);
-}
-.line-current::after {
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 .header-mail-tel {
   display: flex;
@@ -85,13 +87,13 @@
   color: var(--text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
+
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -99,6 +101,10 @@
   fill: currentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header-mail:hover &,
+  .header-mail:focus & {
+    color: var(--accent-color);
+  }
 }
 .tel-icon {
   width: 10px;
@@ -107,10 +113,9 @@
   fill: currentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-mail:hover .mail-icon,
-.header-mail:focus .mail-icon,
-.header-tel:hover .tel-icon,
-.header-tel:focus .tel-icon {
-  color: var(--accent-color);
+
+  .header-tel:hover &,
+  .header-tel:focus & {
+    color: var(--accent-color);
+  }
 }
