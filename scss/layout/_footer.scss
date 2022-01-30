@@ -3,33 +3,33 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-connect {
+.connect {
   display: flex;
 }
-.footer-adress {
+.address {
   margin-right: 70px;
 }
-.footer-logo {
+.footer__logo {
   margin-bottom: 20px;
   display: block;
 }
 .logo-white {
   color: var(--header-color);
 }
-.footer-item {
+.address-list__item {
   font-style: normal;
 }
-.footer-link-map {
+.address-list__link-map {
   color: var(--header-color);
 }
-.footer-link-mail,
-.footer-link-tel {
+.address-list__link-mail,
+.address-list__link-tel {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link-mail,
-.footer-link-tel,
-.footer-link-map {
+.address-list__link-mail,
+.address-list__link-tel,
+.address-list__link-map {
   font-size: 14px;
   line-height: 1.71;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

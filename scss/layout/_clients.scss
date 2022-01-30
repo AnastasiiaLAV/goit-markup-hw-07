@@ -1,16 +1,16 @@
-.main-three-list {
+.client-list {
   display: flex;
   justify-content: center;
 
   margin-top: calc(-1 * var(--gap));
   margin-left: calc(-1 * var(--gap));
 }
-.main-three-item {
+.client-list__item {
   flex-basis: calc(100% / 6 - var(--gap));
   margin-top: var(--gap);
   margin-left: var(--gap);
 }
-.main-three-link {
+.client-list__link {
   width: 170px;
   height: 92px;
   background-color: inherit;
@@ -31,7 +31,7 @@
   }
 }
 
-.main-three-icon {
+.client-list__icon {
   width: 106px;
   height: 60px;
 

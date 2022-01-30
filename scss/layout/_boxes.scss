@@ -1,20 +1,20 @@
-.list-two {
+.box-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--gap));
   margin-left: calc(-1 * var(--gap));
 }
 
-.main-item-two {
+.box-list__item {
   flex-basis: calc(100% / 3 - var(--gap));
   margin-top: var(--gap);
   margin-left: var(--gap);
 }
 
-.main-img-app-wrap {
+.box-list__img-wrap {
   position: relative;
 }
-.main-app {
+.box-list__title {
   position: absolute;
   bottom: 0;
   width: 370px;

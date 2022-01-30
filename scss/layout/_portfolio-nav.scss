@@ -1,17 +1,17 @@
-.main-section-nav {
+.portfolio-section-nav {
   padding-bottom: 50px;
 }
-.main-list-nav {
+.portfolio-nav__list {
   display: flex;
   justify-content: center;
 }
-.main-item-nav {
+.portfolio-nav__item {
   margin-right: 8px;
   &:last-child {
     margin-right: 0;
   }
 }
-.main-btn {
+.portfolio-nav__btn {
   background: var(--btn-background);
   font-family: inherit;
   font-weight: 500;

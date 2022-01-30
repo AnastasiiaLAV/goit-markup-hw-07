@@ -1,4 +1,4 @@
-.hero-container {
+.hero__container {
   max-width: 1600px;
   padding: 200px 0;
 }
@@ -12,7 +12,7 @@
   background-position: center;
   background-size: cover;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -25,6 +25,6 @@
   text-align: center;
   margin-bottom: var(--gap);
 }
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
 }
